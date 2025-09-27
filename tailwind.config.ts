@@ -49,17 +49,17 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-cosmic': 'var(--gradient-cosmic)',
+        'gradient-festive': 'var(--gradient-festive)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
       },
       boxShadow: {
-        'cosmic': 'var(--glow-primary)',
-        'cosmic-secondary': 'var(--glow-secondary)',
-        'cosmic-accent': 'var(--glow-accent)',
+        'festive': 'var(--glow-primary)',
+        'festive-secondary': 'var(--glow-secondary)',
+        'festive-accent': 'var(--glow-accent)',
       },
       fontFamily: {
-        'cosmic': ['Orbitron', 'monospace'],
+        'festive': ['Cinzel', 'serif'],
         'sans': ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {

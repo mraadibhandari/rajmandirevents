@@ -18,16 +18,16 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="font-cosmic font-black text-4xl md:text-6xl lg:text-7xl mb-6 animate-float">
+          <h1 className="font-festive font-black text-4xl md:text-6xl lg:text-7xl mb-6 animate-float">
             Creating Lifetime 
-            <span className="block text-cosmic">Concert Experiences</span>
+            <span className="block text-festive">Concert Experiences</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            From small towns to global stages, we bring unforgettable live music moments.
+            Premium live music experiences in Ratlam and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="btn-hero text-lg px-8 py-4">
-              Book Tickets
+              Book on BookMyShow
             </Button>
             <Button className="btn-secondary text-lg px-8 py-4">
               See Upcoming Events
@@ -39,10 +39,10 @@ const Home = () => {
       {/* Upcoming Highlight */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="card-cosmic rounded-2xl p-8 md:p-12 transition-cosmic hover:scale-[1.02]">
+          <div className="card-festive rounded-2xl p-8 md:p-12 transition-festive hover:scale-[1.02]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="font-cosmic font-bold text-3xl md:text-4xl mb-4 text-cosmic">
+                <h2 className="font-festive font-bold text-3xl md:text-4xl mb-4 text-festive">
                   Arijit Singh Live in Ratlam
                 </h2>
                 <p className="text-xl text-muted-foreground mb-6">
@@ -60,7 +60,7 @@ const Home = () => {
                 <img
                   src={arijitImage}
                   alt="Arijit Singh Concert"
-                  className="rounded-xl w-full h-auto cosmic-glow"
+                  className="rounded-xl w-full h-auto festive-glow"
                 />
               </div>
             </div>
@@ -72,18 +72,18 @@ const Home = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-cosmic font-bold text-4xl md:text-5xl mb-4 text-cosmic">
-              The Comet Promise
+            <h2 className="font-festive font-bold text-4xl md:text-5xl mb-4 text-festive">
+              The Rajmandir Promise
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Three pillars that make every Comet Experience extraordinary
+              Three pillars that make every Rajmandir experience extraordinary
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="card-cosmic p-8 text-center transition-cosmic hover:scale-105">
+            <Card className="card-festive p-8 text-center transition-festive hover:scale-105">
               <CardContent className="space-y-4">
-                <div className="w-16 h-16 mx-auto rounded-full bg-primary/20 flex items-center justify-center cosmic-glow">
+                <div className="w-16 h-16 mx-auto rounded-full bg-primary/20 flex items-center justify-center festive-glow">
                   <Star className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="font-bold text-2xl">World-Class Artists</h3>
@@ -94,9 +94,9 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            <Card className="card-cosmic p-8 text-center transition-cosmic hover:scale-105">
+            <Card className="card-festive p-8 text-center transition-festive hover:scale-105">
               <CardContent className="space-y-4">
-                <div className="w-16 h-16 mx-auto rounded-full bg-secondary/20 flex items-center justify-center cosmic-glow">
+                <div className="w-16 h-16 mx-auto rounded-full bg-secondary/20 flex items-center justify-center festive-glow">
                   <Award className="w-8 h-8 text-secondary" />
                 </div>
                 <h3 className="font-bold text-2xl">Unmatched Production</h3>
@@ -107,14 +107,14 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            <Card className="card-cosmic p-8 text-center transition-cosmic hover:scale-105">
+            <Card className="card-festive p-8 text-center transition-festive hover:scale-105">
               <CardContent className="space-y-4">
-                <div className="w-16 h-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center cosmic-glow">
+                <div className="w-16 h-16 mx-auto rounded-full bg-accent/20 flex items-center justify-center festive-glow">
                   <Music className="w-8 h-8 text-accent" />
                 </div>
                 <h3 className="font-bold text-2xl">Lifetime Memories</h3>
                 <p className="text-muted-foreground">
-                  Every Comet Experience is designed to create moments you'll 
+                  Every Rajmandir experience is designed to create moments you'll 
                   treasure forever, with perfect acoustics and atmosphere.
                 </p>
               </CardContent>
@@ -123,72 +123,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Past Highlights */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-cosmic font-bold text-4xl md:text-5xl mb-4 text-cosmic">
-              Relive Our Best Moments
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Highlights from our previous shows that created lasting memories
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Card key={item} className="card-cosmic overflow-hidden transition-cosmic hover:scale-105">
-                <div className="aspect-video bg-gradient-cosmic flex items-center justify-center">
-                  <Users className="w-12 h-12 text-white/80" />
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-semibold text-lg mb-2">Amazing Concert #{item}</h3>
-                  <p className="text-muted-foreground text-sm">
-                    An unforgettable night of music and energy
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sponsors */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-cosmic font-bold text-4xl md:text-5xl mb-4 text-cosmic">
-              Trusted by Leading Brands
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Partners who share our vision of creating extraordinary experiences
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
-            {[1, 2, 3, 4, 5, 6].map((sponsor) => (
-              <div
-                key={sponsor}
-                className="aspect-square bg-muted rounded-lg flex items-center justify-center text-muted-foreground"
-              >
-                <span className="font-bold">BRAND {sponsor}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Newsletter */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <Card className="card-cosmic p-8 md:p-12 text-center">
+          <Card className="card-festive p-8 md:p-12 text-center">
             <CardContent className="space-y-6">
-              <h2 className="font-cosmic font-bold text-3xl md:text-4xl text-cosmic">
+              <h2 className="font-festive font-bold text-3xl md:text-4xl text-festive">
                 Be the First to Know
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Get exclusive access to pre-sale tickets, behind-the-scenes content, 
-                and first announcements of upcoming concerts.
+                Get exclusive updates about Rajmandir Events, pre-sale ticket access, 
+                and announcements for future concerts in Ratlam.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
                 <input

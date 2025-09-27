@@ -27,9 +27,7 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: "2023", event: "Comet Experiences Founded", description: "Started with a vision to bring world-class concerts to tier-3 cities" },
-    { year: "2024", event: "First Major Concert", description: "Successfully hosted our debut concert with overwhelming response" },
-    { year: "2025", event: "Expansion Phase", description: "Expanded operations to multiple cities across India" },
+    { year: "2025", event: "Rajmandir Events Founded", description: "Started with a vision to bring world-class concerts to Ratlam" },
     { year: "2026", event: "Arijit Singh Concert", description: "Bringing India's biggest music icon to Ratlam" }
   ];
 
@@ -38,43 +36,39 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="font-cosmic font-bold text-4xl md:text-6xl mb-4 text-cosmic">
+          <h1 className="font-festive font-bold text-4xl md:text-6xl mb-4 text-festive">
             Who We Are
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            More than an event company—we're a movement to bring world-class concerts 
-            to every corner of India, creating premium experiences that connect hearts through music.
+            Rajmandir Events specializes in creating premium live music experiences in Ratlam
           </p>
         </div>
 
         {/* Main Story */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
           <div className="space-y-6">
-            <h2 className="font-cosmic font-bold text-3xl text-cosmic">Our Story</h2>
+            <h2 className="font-festive font-bold text-3xl text-festive">Our Story</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Comet Experiences was born from a simple yet powerful belief: every music lover, 
-              regardless of where they live, deserves access to world-class live entertainment. 
-              We saw talented artists performing only in metro cities while millions of fans 
-              in smaller towns could only dream of seeing their favorite stars live.
+              Rajmandir Events was founded in 2025 with a vision to bring premium live music 
+              experiences to Ratlam. We believe that great music should be accessible to 
+              everyone, and we're committed to creating unforgettable moments for music lovers 
+              in our beautiful city.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              That's when we decided to bridge this gap. We're not just an event company—we're 
-              dream enablers who bring the magic of live music to places where it's never been 
-              before. Every concert we organize is a celebration of music, community, and the 
-              shared human experience of being moved by art.
+              Our debut event featuring Arijit Singh represents our commitment to bringing
             </p>
             <Button className="btn-hero">
               Join Our Journey
             </Button>
           </div>
           <div className="relative">
-            <div className="aspect-square bg-gradient-cosmic rounded-2xl flex items-center justify-center cosmic-glow">
+            <div className="aspect-square bg-gradient-festive rounded-2xl flex items-center justify-center festive-glow">
               <div className="text-center text-white p-8">
                 <Music className="w-24 h-24 mx-auto mb-6" />
-                <h3 className="font-cosmic font-bold text-2xl mb-4">
-                  15,000+
+                <h3 className="font-festive font-bold text-2xl mb-4">
+                  1+
                 </h3>
-                <p className="text-lg">Happy Concert-goers</p>
+                <p className="text-lg">Upcoming Concert</p>
               </div>
             </div>
           </div>
@@ -82,36 +76,34 @@ const About = () => {
 
         {/* Mission & Vision */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          <Card className="card-cosmic p-8">
+          <Card className="card-festive p-8">
             <CardContent className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
                   <Target className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-cosmic font-bold text-2xl text-cosmic">Our Mission</h3>
+                <h3 className="font-festive font-bold text-2xl text-festive">Our Mission</h3>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To create accessible yet premium live music experiences for music lovers everywhere. 
-                We believe that geography should never be a barrier to experiencing the magic of 
-                live music, and we're committed to bringing world-class artists and production 
-                to every corner of India.
+                To create premium yet accessible live music experiences for music lovers in Ratlam. 
+                We're dedicated to bringing world-class entertainment to our city and establishing 
+                Ratlam as a destination for incredible live music.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="card-cosmic p-8">
+          <Card className="card-festive p-8">
             <CardContent className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
                   <Eye className="w-6 h-6 text-secondary" />
                 </div>
-                <h3 className="font-cosmic font-bold text-2xl text-cosmic">Our Vision</h3>
+                <h3 className="font-festive font-bold text-2xl text-festive">Our Vision</h3>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To make Comet Experiences India's most trusted concert brand, synonymous with 
-                quality, accessibility, and unforgettable moments. We envision a future where 
-                every music lover has access to live concerts that rival the best in the world, 
-                regardless of their location.
+                To make Rajmandir Events the premier live entertainment brand in Central India, 
+                known for bringing world-class artists to intimate venues and creating 
+                unforgettable experiences that bring our community together.
               </p>
             </CardContent>
           </Card>
@@ -120,7 +112,7 @@ const About = () => {
         {/* Values */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="font-cosmic font-bold text-3xl md:text-4xl mb-4 text-cosmic">
+            <h2 className="font-festive font-bold text-3xl md:text-4xl mb-4 text-festive">
               Our Values
             </h2>
             <p className="text-xl text-muted-foreground">
@@ -130,9 +122,9 @@ const About = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="card-cosmic p-6 text-center transition-cosmic hover:scale-105">
+              <Card key={index} className="card-festive p-6 text-center transition-festive hover:scale-105">
                 <CardContent className="space-y-4">
-                  <div className="w-16 h-16 mx-auto rounded-full bg-primary/20 flex items-center justify-center cosmic-glow">
+                  <div className="w-16 h-16 mx-auto rounded-full bg-primary/20 flex items-center justify-center festive-glow">
                     <value.icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-bold text-lg">{value.title}</h3>

@@ -2,61 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Comet Experiences Design System - Cosmic Concert Theme */
+/* Rajmandir Events Design System - Festive Concert Theme */
 
 @layer base {
   :root {
-    /* Base cosmic colors */
-    --background: 222 84% 4%;
-    --foreground: 210 40% 98%;
+    /* Base festive colors */
+    --background: 20 14% 4%;
+    --foreground: 39 100% 97%;
 
-    /* Card backgrounds with subtle cosmic glow */
-    --card: 225 84% 6%;
-    --card-foreground: 210 40% 96%;
+    /* Card backgrounds with festive warmth */
+    --card: 25 25% 6%;
+    --card-foreground: 39 100% 96%;
 
     /* Popover styling */
-    --popover: 225 84% 5%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 20% 5%;
+    --popover-foreground: 39 100% 98%;
 
-    /* Primary neon blue */
-    --primary: 218 100% 65%;
-    --primary-foreground: 222 84% 4%;
+    /* Primary festive orange */
+    --primary: 24 100% 60%;
+    --primary-foreground: 20 14% 4%;
 
-    /* Secondary cosmic purple */
-    --secondary: 271 91% 65%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary golden yellow */
+    --secondary: 45 100% 65%;
+    --secondary-foreground: 20 14% 4%;
 
-    /* Muted space tones */
-    --muted: 225 84% 10%;
-    --muted-foreground: 215 20% 70%;
+    /* Muted warm tones */
+    --muted: 25 25% 10%;
+    --muted-foreground: 39 20% 70%;
 
-    /* Accent neon pink */
-    --accent: 326 100% 74%;
-    --accent-foreground: 222 84% 4%;
+    /* Accent festive red */
+    --accent: 0 100% 65%;
+    --accent-foreground: 20 14% 4%;
 
     /* Destructive warning red */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 39 100% 98%;
 
-    /* Borders and inputs with cosmic glow */
-    --border: 225 84% 15%;
-    --input: 225 84% 12%;
-    --ring: 218 100% 65%;
+    /* Borders and inputs with festive glow */
+    --border: 25 25% 15%;
+    --input: 25 25% 12%;
+    --ring: 24 100% 60%;
 
     --radius: 0.75rem;
 
-    /* Cosmic gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(218 100% 65%), hsl(271 91% 65%), hsl(326 100% 74%));
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 4%) 0%, hsl(225 84% 8%) 50%, hsl(218 100% 20%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(225 84% 6%) 0%, hsl(225 84% 8%) 100%);
+    /* Festive gradients */
+    --gradient-festive: linear-gradient(135deg, hsl(24 100% 60%), hsl(45 100% 65%), hsl(0 100% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(20 14% 4%) 0%, hsl(25 25% 8%) 50%, hsl(24 100% 20%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(25 25% 6%) 0%, hsl(25 25% 8%) 100%);
     
     /* Glow effects */
-    --glow-primary: 0 0 30px hsl(218 100% 65% / 0.5);
-    --glow-secondary: 0 0 30px hsl(271 91% 65% / 0.5);
-    --glow-accent: 0 0 30px hsl(326 100% 74% / 0.5);
+    --glow-primary: 0 0 30px hsl(24 100% 60% / 0.5);
+    --glow-secondary: 0 0 30px hsl(45 100% 65% / 0.5);
+    --glow-accent: 0 0 30px hsl(0 100% 65% / 0.5);
     
     /* Animations */
-    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-festive: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 }
@@ -74,28 +74,28 @@
 }
 
 @layer components {
-  /* Cosmic glow effects */
-  .cosmic-glow {
+  /* Festive glow effects */
+  .festive-glow {
     @apply relative;
   }
   
-  .cosmic-glow::before {
+  .festive-glow::before {
     content: '';
     @apply absolute inset-0 rounded-[inherit] opacity-75 blur-xl;
-    background: var(--gradient-cosmic);
+    background: var(--gradient-festive);
     z-index: -1;
   }
 
   /* Hero button styling */
   .btn-hero {
     @apply relative px-8 py-4 font-bold text-lg rounded-lg transition-all duration-300;
-    background: var(--gradient-cosmic);
+    background: var(--gradient-festive);
     box-shadow: var(--glow-primary);
   }
   
   .btn-hero:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 40px hsl(218 100% 65% / 0.8);
+    box-shadow: 0 0 40px hsl(24 100% 60% / 0.8);
   }
 
   /* Secondary button styling */
@@ -110,8 +110,8 @@
     transform: translateY(-1px);
   }
 
-  /* Card cosmic styling */
-  .card-cosmic {
+  /* Card festive styling */
+  .card-festive {
     background: var(--gradient-card);
     @apply border border-border/50 backdrop-blur-sm;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -123,17 +123,17 @@
   }
 
   /* Text gradient effects */
-  .text-cosmic {
-    background: var(--gradient-cosmic);
+  .text-festive {
+    background: var(--gradient-festive);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
-    animation: cosmic-shine 3s ease-in-out infinite;
+    animation: festive-shine 3s ease-in-out infinite;
   }
 
   /* Navigation styling */
-  .nav-cosmic {
+  .nav-festive {
     @apply backdrop-blur-md border-b border-border/30;
     background: hsl(var(--background) / 0.95);
   }
@@ -141,7 +141,7 @@
 
 @layer utilities {
   /* Animation keyframes */
-  @keyframes cosmic-shine {
+  @keyframes festive-shine {
     0%, 100% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
   }
@@ -151,7 +151,7 @@
     50% { transform: translateY(-10px); }
   }
   
-  @keyframes pulse-cosmic {
+  @keyframes pulse-festive {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.7; }
   }
@@ -161,11 +161,11 @@
     animation: float 3s ease-in-out infinite;
   }
   
-  .animate-pulse-cosmic {
-    animation: pulse-cosmic 2s ease-in-out infinite;
+  .animate-pulse-festive {
+    animation: pulse-festive 2s ease-in-out infinite;
   }
   
-  .transition-cosmic {
-    transition: var(--transition-cosmic);
+  .transition-festive {
+    transition: var(--transition-festive);
   }
 }

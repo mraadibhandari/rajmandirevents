@@ -4,6 +4,10 @@ import { Calendar, MapPin, Clock, Users, Star, Music } from "lucide-react";
 import arijitImage from "@/assets/arijit-concert.jpg";
 
 const EventDetail = () => {
+  const handleBookTickets = () => {
+    window.open('https://in.bookmyshow.com/', '_blank');
+  };
+
   const ticketCategories = [
     {
       name: "Fan Zone",
@@ -49,7 +53,7 @@ const EventDetail = () => {
             </div>
           </div>
           <div className="space-y-6">
-            <h1 className="font-cosmic font-bold text-4xl lg:text-5xl text-cosmic">
+            <h1 className="font-festive font-bold text-4xl lg:text-5xl text-festive">
               Arijit Singh Live in Ratlam
             </h1>
             <div className="space-y-4">
@@ -82,12 +86,12 @@ const EventDetail = () => {
 
         {/* Ticket Categories */}
         <div className="mb-16">
-          <h2 className="font-cosmic font-bold text-3xl md:text-4xl mb-8 text-center text-cosmic">
+          <h2 className="font-festive font-bold text-3xl md:text-4xl mb-8 text-center text-festive">
             Choose Your Experience
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {ticketCategories.map((category, index) => (
-              <Card key={category.name} className={`card-cosmic transition-cosmic hover:scale-105 ${index === 2 ? 'ring-2 ring-accent' : ''}`}>
+              <Card key={category.name} className={`card-festive transition-festive hover:scale-105 ${index === 2 ? 'ring-2 ring-accent' : ''}`}>
                 <CardContent className="p-6">
                   {index === 2 && (
                     <div className="text-center mb-4">
@@ -98,7 +102,7 @@ const EventDetail = () => {
                   )}
                   <div className="text-center mb-6">
                     <h3 className="font-bold text-xl mb-2">{category.name}</h3>
-                    <div className="text-3xl font-cosmic font-bold text-cosmic mb-2">
+                    <div className="text-3xl font-festive font-bold text-festive mb-2">
                       {category.price}
                     </div>
                     <p className="text-sm text-muted-foreground">
@@ -113,8 +117,8 @@ const EventDetail = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className={index === 2 ? 'btn-hero w-full' : 'btn-secondary w-full'}>
-                    Select Tickets
+                  <Button className={index === 2 ? 'btn-hero w-full' : 'btn-secondary w-full'} onClick={handleBookTickets}>
+                    Book on BookMyShow
                   </Button>
                 </CardContent>
               </Card>
@@ -124,7 +128,7 @@ const EventDetail = () => {
 
         {/* Event Highlights */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <Card className="card-cosmic p-8">
+          <Card className="card-festive p-8">
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-3 mb-4">
                 <Music className="w-8 h-8 text-primary" />
@@ -140,7 +144,7 @@ const EventDetail = () => {
             </CardContent>
           </Card>
 
-          <Card className="card-cosmic p-8">
+          <Card className="card-festive p-8">
             <CardContent className="space-y-4">
               <div className="flex items-center space-x-3 mb-4">
                 <MapPin className="w-8 h-8 text-secondary" />
@@ -157,10 +161,10 @@ const EventDetail = () => {
         </div>
 
         {/* Venue Map Placeholder */}
-        <Card className="card-cosmic p-8 mb-16">
+        <Card className="card-festive p-8 mb-16">
           <CardContent>
             <h3 className="font-bold text-2xl mb-6 text-center">Venue Location</h3>
-            <div className="aspect-video bg-gradient-cosmic rounded-lg flex items-center justify-center">
+            <div className="aspect-video bg-gradient-festive rounded-lg flex items-center justify-center">
               <div className="text-center text-white">
                 <MapPin className="w-16 h-16 mx-auto mb-4" />
                 <p className="text-lg">Interactive venue map will be displayed here</p>
@@ -171,9 +175,9 @@ const EventDetail = () => {
         </Card>
 
         {/* Important Information */}
-        <Card className="card-cosmic p-8">
+        <Card className="card-festive p-8">
           <CardContent>
-            <h3 className="font-bold text-2xl mb-6 text-center text-cosmic">Important Information</h3>
+            <h3 className="font-bold text-2xl mb-6 text-center text-festive">Important Information</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="font-semibold text-lg mb-3">Entry Guidelines</h4>
