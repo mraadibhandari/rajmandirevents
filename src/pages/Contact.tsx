@@ -35,13 +35,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@cometexperiences.com",
+      details: "event.info@rajmandir.org",
       description: "For general inquiries and support"
     },
     {
       icon: Phone,
       title: "Call Us",
-      details: "+91-XXXXXXXXXX",
+      details: "+91-9425690111",
       description: "Available Monday to Friday, 9 AM - 6 PM"
     },
     {
